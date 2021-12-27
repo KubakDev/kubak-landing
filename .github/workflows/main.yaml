@@ -4,7 +4,8 @@ on:
   # run it on push to the default repository branch
   push:
     branches: [main]
-
+    paths-ignore:
+      - "*.md"
 concurrency:
   group: ${{ github.ref_name }}
   cancel-in-progress: true
