@@ -1,7 +1,9 @@
-.hero,
-.container.h-100 {
+.hero {
   height: 100vh;
   overflow-x: hidden;
+}
+.container.h-100 {
+  height: 100%;
 }
 :host {
   background-color: #fffaf6;
@@ -18,7 +20,7 @@
   position: absolute;
   top: 0px;
   right: 0px;
-  z-index: -1;
+  z-index: 1;
 }
 .title {
   font-size: 67px;
