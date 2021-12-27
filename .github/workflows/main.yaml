@@ -37,5 +37,5 @@ jobs:
           # Note: tags has to be all lower-case
           tags: |
             5h4k4r/kubak-landing:latest 
-            5h4k4r/kubak-landing:{{ github.sha }}
-            5h4k4r/kubak-landing:{{ github.ref_name }}
+            5h4k4r/kubak-landing:${{ github.sha }}
+            5h4k4r/kubak-landing:${{ github.ref_name }}
