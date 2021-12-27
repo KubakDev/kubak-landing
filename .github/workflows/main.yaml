@@ -4,7 +4,9 @@ on:
   # run it on push to the default repository branch
   push:
     branches: [main]
-
+concurrency:
+  group: ${{ github.head_ref }}
+  cancel-in-progress: true
 jobs:
   # define job to build and publish docker image
   build-and-push:
